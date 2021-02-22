@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "restaurants",
+  "collectionName": "items",
   "info": {
-    "name": "restaurant"
+    "name": "Item",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,9 +12,10 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
